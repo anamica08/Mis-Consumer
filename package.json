@@ -1,9 +1,9 @@
 {
-  "name": "service_two",
+  "name": "consumer-service",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -15,5 +15,15 @@
     "express": "^4.17.1",
     "sequelize": "^6.3.5",
     "sqlite3": "^5.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anamica08/Mis-Consumer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anamica08/Mis-Consumer/issues"
+  },
+  "homepage": "https://github.com/anamica08/Mis-Consumer#readme",
+  "description": ""
 }
