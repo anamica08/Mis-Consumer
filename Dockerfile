@@ -11,6 +11,9 @@ RUN npm install
 
 COPY . . 
 
+RUN mkdir /db
+RUN /usr/bin/sqlite3 /db/test.db
+
 EXPOSE 3000
 
 CMD [ "node", "server.js" ]
