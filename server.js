@@ -1,7 +1,10 @@
 const express = require('express')
 const listener = require('./services/message-listener')
 const app = express()
+const applicationsroute = require("./routes/applicant");
 const { db } = require('./db/applicant')
+
+app.use('/applications',applicationsroute);
 
 db.sync()
 .then(()=>{
