@@ -16,7 +16,7 @@ const apiFunctions = {
         await _query
             .then(result => {
                 fetchedApplications = result.rows;
-                console.log(result.rows);
+                console.log(result);
                 res.status(200).json({
                     message: " Fetched Succesfully",
                     applications: fetchedApplications,
